@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 function login_to_director() {
 	CREDS=${1}
 	DIRECTOR_FOR_DEPLOYMENT=${2}
