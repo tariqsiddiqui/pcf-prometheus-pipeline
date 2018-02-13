@@ -46,7 +46,7 @@ function login_to_bosh_uaa() {
 
 	echo "Logging into BOSH UAA..."
 	# uaac target https://$director_ip:8443 --skip-ssl-validation
-	uaac target https://104.214.117.141:8443 --skip-ssl-validation	
+	uaac target https://uaa.sys.sandbox.mrcooper.pw --skip-ssl-validation	
 	uaac token owner get login -s $uaa_login_password<<EOF
 admin
 $uaa_admin_password
