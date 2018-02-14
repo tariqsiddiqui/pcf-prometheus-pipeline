@@ -101,7 +101,7 @@ jobs:
       - pcf-prometheus-pipeline/pcf-local-cf_exporter.yml
       vars:
         network: ((deploy_network))
-        azs: ((deploy_azs))
+        azs: null #((deploy_azs))
         grafana_password: ((grafana_admin_password))
         prometheus_password: ((prometheus_admin_password))
         vm_type_micro: ((deploy_vm_type_micro))
